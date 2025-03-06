@@ -71,13 +71,6 @@ var apps = [
       'url': 'https://coolmathgames.com',
       'image': 'https://docs.google.com/drawings/d/e/2PACX-1vR6y2GvcGu9PdrX9zzE24dhm24hClcNsdAmZjIgSUC8sFOahf6t7Yg6l_W8Rd4GduWOH_X02GHVFdBb/pub?w=512&h=512'
     },
-    {
-      'id': 'gbaemulator',
-      'title': 'GBA Emulator',
-      'url': 'https://cattn.github.io/gba',
-      "image": "https://cattn.github.io/gba/pwa/apple-icon-180.png",
-      "description": "A Game Boy Advance retro emulator with over 3000 games, and other consoles as well"
-    }
   ]
   
   var customapps = JSON.parse(localStorage.getItem("customapps"))
