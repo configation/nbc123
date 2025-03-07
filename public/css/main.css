@@ -1,5 +1,12 @@
+```css
 @import url(themes.css);
 @import url(cards.css);
+
+:root {
+    --background: #2e2e2e;
+    --text-color: #f5f5f5;
+    --accent: #8a2be2;
+}
 
 body {
     color: var(--text-color);
@@ -12,32 +19,34 @@ body {
     -webkit-background-size: cover;
 }
 
-/* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background: var(--accent); 
     border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--accent); 
-  }
+}
 
-h1 , h2 , h3  {
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent); 
+}
+
+h1, h2, h3 {
     font-family: "Montserrat", sans-serif;
 }
 
-h1 { font-size: 50px; }
+h1 {
+    font-size: 50px;
+}
 
-#splash { font-size: 24px; }
+#splash {
+    font-size: 24px;
+}
 
-p { font-size: 20px; }
+p {
+    font-size: 20px;
+}
 
 h1 > span {
     font-family: "Montserrat", sans-serif;
@@ -46,9 +55,9 @@ h1 > span {
 
 .center-container {
     position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
@@ -73,7 +82,11 @@ button {
     transition: 0.4s all;
 }
 
-.play { font-family: "Montserrat"; font-weight: 700; color: var(--background); }
+.play {
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: var(--background);
+}
 
 button:hover {
     filter: brightness(80%);
@@ -104,6 +117,7 @@ button:hover {
     text-decoration: underline;
     filter: brightness(100%);
 }
+
 .links .left {
     margin-left: 25px;
     justify-content: flex-start;
@@ -124,37 +138,43 @@ button:hover {
 #gameInfo {
     width: 25%;
     height: 100%;
-  }
-  
-  #frame {
+}
+
+#frame {
     width: 75%;
     height: 100%;
     border-radius: 10px;
     background-color: white;
-  }
-  #gameInfo .gameHeader {
+}
+
+#gameInfo .gameHeader {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 25% 25px;
-  }
-  
-  #gameInfo div img {
+}
+
+#gameInfo div img {
     aspect-ratio: 1 / 1;
     height: 75px;
     border-radius: 5px;
-  }
-  
-  #gameInfo div h3 { margin-left: 15px; }
-  
-  #gameInfo { position: relative; }
-  
-  #gameInfo #menubtns {
+}
+
+#gameInfo div h3 {
+    margin-left: 15px;
+}
+
+#gameInfo {
+    position: relative;
+}
+
+#gameInfo #menubtns {
     position: absolute;
     bottom: 15px;
     width: 100%;
-  }
-  #menubtns button {
+}
+
+#menubtns button {
     border: 3px solid white;
     font-family: "DM Sans";
     padding: 7px 15px;
@@ -169,76 +189,76 @@ button:hover {
     opacity: 0.7;
     transition: 0.4s all;
     margin: 5px 5px;
-  }
-  
-  #menubtns button:hover {
+}
+
+#menubtns button:hover {
     opacity: 1;
     scale: 1.1;
-  }
-  
-  #gameInfo #gameDescription {
-    margin: 15px;
-  }
+}
 
-  .pxyinput {
+#gameInfo #gameDescription {
+    margin: 15px;
+}
+
+.pxyinput {
     width: 600px;
     height: 50px;
     margin: 10px;
-  }
-
-  input[type=text], button.secondary, select {
-     background-color: #111;
-     transition: 0.4s border;
-     border-radius: 5px;
-     border: none;
-     font-size: 20px;
-     color: white;
-     text-align: center;
-     padding: 5px 15px;
-     margin: 5px auto;
-  }
-  input[type=text]:focus {
-    outline: none;
- }
-
- button.secondary img {
-  height: 25px;
-  width: 25px;
-  margin-top: 5px;
-  border-radius: 5px;
- }
-
-#search {
-background-color: #111;
-transition: 0.4s border;
-border-radius: 5px;
-border: none;
-font-size: 20px;
-width: 500px;
-height: 45px;
-color: white;
-text-align: center;
-padding: 5px 15px;
-margin: 5px auto;
 }
 
- .frame {
-  border-radius: 5px;
-  background-color: white;
-  display: block;
-  margin: auto;
+input[type=text], button.secondary, select {
+    background-color: #111;
+    transition: 0.4s border;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 5px 15px;
+    margin: 5px auto;
+}
 
-  border: none;
-  
-  height: calc(100vh - 80px);
-  width: calc(100vw - 30px);
+input[type=text]:focus {
+    outline: none;
+}
+
+button.secondary img {
+    height: 25px;
+    width: 25px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+#search {
+    background-color: #111;
+    transition: 0.4s border;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    width: 500px;
+    height: 45px;
+    color: white;
+    text-align: center;
+    padding: 5px 15px;
+    margin: 5px auto;
+}
+
+.frame {
+    border-radius: 5px;
+    background-color: white;
+    display: block;
+    margin: auto;
+    border: none;
+    height: calc(100vh - 80px);
+    width: calc(100vw - 30px);
 }
 
 .ad {
-  height: 60px;
-  width: 468px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+    height: 60px;
+    width: 468px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+```
