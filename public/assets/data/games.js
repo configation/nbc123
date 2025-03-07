@@ -204,7 +204,7 @@ var games = [
     id: 'run2',
     title: 'Run 2',
     url: 'https://glcdn.githack.com/kaioxdev/legacy-assets/-/raw/main/Run%202/index.html',
-    image: 'https://i.pinimg.com/280x280_RS/b6/2f/e8/b62fe8c6a9ceb9fd7e5257ad25f6897d.jpg',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrHeD6sNB3jfKbwVzR3sWOyl1VjL1yxQqlww&s',
     description: 'Run 2 is a classic game where you swerve through space in a race to the finish. Play hundreds of new levels in this fast-paced platformer'
   },
   {
@@ -365,12 +365,6 @@ var games = [
     title: 'Among Us',
     url: 'https://assets.3kh0.net/among-us/index.html',
     image: 'https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec'
-  },
-  {
-    id: 'rocketleague',
-    title: 'Rocket League',
-    url: 'https://assets.3kh0.net/Rocket-League/index.html',
-    image: 'https://cdn2.iconfinder.com/data/icons/popular-games-1/50/rocketleague_squircle-512.png'
   },
   {
     id: 'curveball3d',
